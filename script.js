@@ -1,8 +1,8 @@
 // Function constructor
 var john = {
-    name: `John`,
-    yearOfBirth: 1990,
-    job: `teacher`
+  name: `John`,
+  yearOfBirth: 1990,
+  job: `teacher`,
 };
 
 // JavaScript ES6
@@ -49,12 +49,37 @@ var john = {
 
 // let numbers = [3, 5, 8, 9];
 
-// let double = numbers.map(function() {
-//     numbers.length * 2;
+// let doubled = numbers.map(function(x) {
+//     return x * 2
 // });
 
-// console.log(double);
+// console.log(doubled);
 
-(function() { console.log("hello") }) ();
+// let numbers = [3, 5, 8, 9];
 
-(() => {console.log("Hello IIFE")}) ();
+// let doubled = numbers.map(x => x * 2);
+
+// console.log(doubled);
+
+// let person = {
+//     firstName: "Asif",
+//     lastName: "newaz",
+//     sayName () {
+//         return `${this.firstName} ${this.lastName}`;
+//     }
+// }
+
+// console.log(person.sayName());
+
+let person = {
+  firstName: "Asif",
+  hobbies: ["programming", "game", "gym"],
+  showHobbies: function () {
+    //   let test = this;
+    this.hobbies.forEach(hobby => {
+      console.log(`${this.firstName} likes ${hobby}`);
+    });
+  },
+};
+
+person.showHobbies();
