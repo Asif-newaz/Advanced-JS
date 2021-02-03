@@ -6,16 +6,31 @@ var john = {
 };
 
 // JavaScript ES6
+// Uses of let variable
 // function sayName() {
-//     var name = "Asif Newaz";
+//     var firstName = "Asif";
+//     let lastName = "Newaz";
 // }
 
 // sayName();
-// console.log(name);
+// console.log(firstName);
 
-if (true) {
-    var name = "Asif Newaz";
-    // console.log(name)
+// if (true) {
+//     let age = 26;
+//     console.log(name)
+// }
+
+// console.log(age);
+
+// for (let i = 0; i <= 10; i++) {
+//     console.log(i);
+// }
+// We can't initialized loop using cons variable
+
+// console.log(`outside loop ${i}`);
+
+{
+    let x = 5;
 }
 
-console.log(name);
+console.log(x);
