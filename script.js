@@ -5,8 +5,10 @@ var john = {
   job: `teacher`,
 };
 
-// JavaScript ES6
+/* ##########-----JAVASCRIPT ES6 FEATURES BY RYAN CHRISTIANI-----########## */
+
 // Uses of let variable
+
 // function sayName() {
 //     var firstName = "Asif";
 //     let lastName = "Newaz";
@@ -71,15 +73,21 @@ var john = {
 
 // console.log(person.sayName());
 
-let person = {
-  firstName: "Asif",
-  hobbies: ["programming", "game", "gym"],
-  showHobbies: function () {
-    //   let test = this;
-    this.hobbies.forEach(hobby => {
-      console.log(`${this.firstName} likes ${hobby}`);
-    });
-  },
-};
+// let person = {
+//   firstName: "Asif",
+//   hobbies: ["programming", "game", "gym"],
+//   showHobbies: function () {
+//     //   let test = this;
+//     this.hobbies.forEach(hobby => {
+//       console.log(`${this.firstName} likes ${hobby}`);
+//     });
+//   },
+// };
 
-person.showHobbies();
+// person.showHobbies();
+
+let sum = function() {
+  console.log(arguments);
+}
+
+sum(1,2,3,5);
