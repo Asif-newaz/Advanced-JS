@@ -86,8 +86,32 @@ var john = {
 
 // person.showHobbies();
 
-let sum = function() {
-  console.log(arguments);
+function driverLicense5(passedTest) {
+  if (passedTest) {
+    var firstName = "John";
+    var yearOfBirth = 1990;
+  }
+  console.log(
+    firstName +
+      " was born in " +
+      yearOfBirth +
+      ", is now officially allowed to drive a car."
+  );
 }
 
-sum(1,2,3,5);
+driverLicense5(true);
+
+function driverLicense6(passedTest) {
+  if (passedTest) {
+    let firstName = "John";
+    const yearOfBirth = 1990;
+  }
+  console.log(
+    firstName +
+      " was born in " +
+      yearOfBirth +
+      ", is now officially allowed to drive a car." 
+  );
+}
+
+driverLicense6(true);
