@@ -110,24 +110,41 @@ var john = {
 //     firstName +
 //       " was born in " +
 //       yearOfBirth +
-//       ", is now officially allowed to drive a car." 
+//       ", is now officially allowed to drive a car."
 //   );
 // }
 
 // driverLicense6(true);
 
-let firstName = 'Asif';
-let lastName = 'Newaz';
+// let firstName = 'Asif';
+// let lastName = 'Newaz';
 
-function sayName() {
-  return `${firstName} ${lastName}`;
-}
+// function sayName() {
+//   return `${firstName} ${lastName}`;
+// }
 
-console.log(sayName());
+// console.log(sayName());
 
-const n = `${firstName} ${lastName}`;
+// const n = `${firstName} ${lastName}`;
 
-console.log(n.startsWith('As'));
-console.log(n.endsWith('iz'));
-console.log(n.includes('n'));
-console.log(`${firstName} ` .repeat(5));
+// console.log(n.startsWith('As'));
+// console.log(n.endsWith('iz'));
+// console.log(n.includes('n'));
+// console.log(`${firstName} ` .repeat(5));
+
+// Map in JS
+const years = [1980, 1983, 1993, 1997, 1999];
+
+console.log(years);
+
+// ES5
+// var ages = years.map(function(year) {
+//   return 2021 - year;
+// })
+
+// ES6
+let ages = years.map(
+  (year, xxx) => `Age element ${xxx + 1}: ${2021 - year}`
+);
+
+console.log(ages);
