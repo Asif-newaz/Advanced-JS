@@ -86,32 +86,48 @@ var john = {
 
 // person.showHobbies();
 
-function driverLicense5(passedTest) {
-  if (passedTest) {
-    var firstName = "John";
-    var yearOfBirth = 1990;
-  }
-  console.log(
-    firstName +
-      " was born in " +
-      yearOfBirth +
-      ", is now officially allowed to drive a car."
-  );
+// function driverLicense5(passedTest) {
+//   if (passedTest) {
+//     var firstName = "John";
+//     var yearOfBirth = 1990;
+//   }
+//   console.log(
+//     firstName +
+//       " was born in " +
+//       yearOfBirth +
+//       ", is now officially allowed to drive a car."
+//   );
+// }
+
+// driverLicense5(true);
+
+// function driverLicense6(passedTest) {
+//   if (passedTest) {
+//     let firstName = "John";
+//     const yearOfBirth = 1990;
+//   }
+//   console.log(
+//     firstName +
+//       " was born in " +
+//       yearOfBirth +
+//       ", is now officially allowed to drive a car." 
+//   );
+// }
+
+// driverLicense6(true);
+
+let firstName = 'Asif';
+let lastName = 'Newaz';
+
+function sayName() {
+  return `${firstName} ${lastName}`;
 }
 
-driverLicense5(true);
+console.log(sayName());
 
-function driverLicense6(passedTest) {
-  if (passedTest) {
-    let firstName = "John";
-    const yearOfBirth = 1990;
-  }
-  console.log(
-    firstName +
-      " was born in " +
-      yearOfBirth +
-      ", is now officially allowed to drive a car." 
-  );
-}
+const n = `${firstName} ${lastName}`;
 
-driverLicense6(true);
+console.log(n.startsWith('As'));
+console.log(n.endsWith('iz'));
+console.log(n.includes('n'));
+console.log(`${firstName} ` .repeat(5));
