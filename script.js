@@ -195,17 +195,25 @@
 // console.log(age);
 
 // Object destructuring
-var obj = {
-  firstName: 'Asif',
-  age: 26
-}
+// var obj = {
+//   firstName: 'Asif',
+//   age: 26
+// }
 
 // console.log(obj.firstName);
 
-const {firstName, age} = obj;
+// const {firstName, age} = obj;
 
 // console.log(firstName, age);
 
-const {firstName: a, age: b} = obj;
+// const {firstName: a, age: b} = obj;
 
-console.log(b);
+// console.log(b);
+
+const boxes = document.querySelectorAll('.box');
+
+console.log(boxes);
+
+var boxesArr5 = Array.prototype.slice.call(boxes);
+
+console.log(boxesArr5);
