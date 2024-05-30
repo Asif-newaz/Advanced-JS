@@ -13,7 +13,7 @@ function calculator(num1, num2, Callback) {
 
 //Callback pattern
 const paymentSuccess = true;
-const marks = 70;
+const marks = 90;
 
 function enroll(callback) {
   console.log("Course enrollment is in progress...");
