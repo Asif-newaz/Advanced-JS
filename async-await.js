@@ -57,7 +57,7 @@ async function course() {
   }
 }
 
-course();
+// course();
 
 // enroll()
 //   .then(progress)
@@ -68,3 +68,9 @@ course();
 //   .catch(function (err) {
 //     console.log(err);
 //   });
+
+function friendlyFunction() {
+  return Promise.resolve("Hello");
+}
+
+console.log(friendlyFunction());
